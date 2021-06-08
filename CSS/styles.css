@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.offset:before {
+    display:block;
+    content:"";
+    height:6rem;
+}
+
+.navbar { 
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:700;
+    letter-spacing: 0.2rem;
+    padding: 20px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:#fff;
+    padding-left: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover  {
+    color: #1ebba3;
+    padding-left:20px;
+}
+
+.heading-content{
+    position:absolute;
+    top:60%;
+    width:100%;
+    max-width: 100%;
+}
+
+.heading-content h5{
+    font-size:3em;
+    font-weight: 300;
+    color:rgb(207, 205, 205);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.heading-content h1{
+    font-size:2.5em;
+    font-weight: 300;
+    color:rgb(255, 255, 255);
+    font-family: 'Satisfy', cursive;   
+}
+
+.heading-content p{
+    font-size:1em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color:rgb(255, 255, 255);
+    font-family: 'Satisfy', cursive;   
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+img {
+    min-width:70%;
+   
+}
+
+#ux-img {
+    min-width: 20%;
+}
+
+/***************************About Start************************/
+#about .btn {
+    border:2px solid rgb(150, 55, 21);
+    width:40%;
+    padding: 15px 22px;
+    background:#000 ;
+    border-radius: 5px;
+    margin-top:10px;
+}
+
+#about .btn a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform:uppercase ;
+}
+
+#about .btn:hover {
+    border:2px solid #1ebba3;
+    cursor:pointer;
+}
+
+.btn-preview{
+    width:100%;
+}
+
+.text-size {
+    font-size: 20px;
+}
+
+
+/***************************Service Start************************/
+
+
+/***************************Media Query************************/
+@media screen and (max-width:767px) {
+    /***************************Tablets************************/
+    .navbar {
+        letter-spacing: 0.1em;
+        padding: 10px 0;
+    }
+    .heading-content h5{
+        font-size:3em;
+    }
+    
+    .heading-content h1{
+        font-size:3em;
+    }
+    
+    .heading-content p{
+        font-size:0.9em;
+    }
+
+    #contact .post-heading h3 {
+        font-size: 2em;
+    }
+    
+
+}
+
+@media screen and (max-width:479px) {
+    /***************************Smartphones************************/
+    .navbar {
+        letter-spacing: 0.1em;
+        padding: 7px 0;
+    }
+    .heading-content h5{
+        font-size:2em;
+    }
+    
+    .heading-content h1{
+        font-size:2em;
+    }
+    
+    .heading-content p{
+        font-size:0.7em;
+    }
+    
+}
+
+   /***************************Test modals***********************/
+  .card-title {
+      color:rgb(78, 72, 74)
+  }
+
+  .card {
+      margin-left: 0px;
+  }
+
+  .mb-0{
+      color:black;
+      text-decoration:none;
+  }
+  a, a:hover,a:visited, a:focus {
+    text-decoration:none;
+}
+
+.title-waffle {
+    margin-left:25px;
+    padding:10px;
+}
+
+.button-size {
+   width: 100%;
+   padding-top: 10px;
+}
+
+.button-view {
+    width:100%;
+    
+}
+
+.toggle-size {
+    width:100%;
+}
+
+/*Indicators*/
+.img-size{
+    /* 	padding: 0;
+        margin: 0; */
+        height: 450px;
+        width: 700px;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .modal-content {
+       width: 700px;
+      border:none;
+    }
+    .modal-body {
+       padding: 0;
+    }
+    
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        width: 30px;
+        height: 48px;
+        filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(243deg) brightness(105%) contrast(101%);
+
+
+       
+    }
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        width: 30px;
+        height: 48px;
+        filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(243deg) brightness(105%) contrast(101%);
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+        
+    }
+    
+    a:hover {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    .centered-img-text {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 0%; 
+      }
+
+   .mePhoto {
+   margin-top:10px;
+    color: white;
+    padding: 5px;
+    min-width: 130%;
+   }
+
+   .linkedin-link {
+       color: white;
+       font-size: 20px;
+       
+   }
+
